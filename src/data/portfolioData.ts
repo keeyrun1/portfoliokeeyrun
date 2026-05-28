@@ -1,4 +1,4 @@
-import { ExperienceItem, FocusItem, SkillItem, EducationItem, ProjectItem } from '../types';
+import { ExperienceItem, FocusItem, SkillItem, EducationItem, ProjectItem, LabCertification } from '../types';
 
 export const portfolioMetadata = {
   name: 'Kiran Kumar Pasupuleti',
@@ -63,8 +63,61 @@ export const educations: EducationItem[] = [
     type: 'Certifications',
     title: 'Professional Credentials Portfolio',
     provider: 'Google, Microsoft & Infosys Certified',
-    description: 'Google Cloud Certified Associate Cloud Engineer (Jan 2024 - Jan 2027, ID: 91531373), Azure Fundamentals, AZ-900, Financial Capital Markets Specialist, and Agile Scrum Practitioner.',
+    description: 'Active professional credentials validating cloud infrastructure architecture, operational Agile methodology, and financial services capital markets engineering.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBae05fS3am83_bduvNI71rNxSMGS8jI6CgalFqbxPNqQvf3Zd5uBGsrItyOKhdQvcoOsN2CRl3BFHzJm6vn_idXVlnP35sbcLzu2XyWnnGbLvj2ElPikRENZO16f3LoTp4yEqZMCTJLCC2UVFcvXFwHbUQ3EjFPwR--VBgWVLaxfoyXbFSUPw84Sma63VlRAaynxx9z1Y3jtBk5f8Zs0lmUhkbqewAr0rL5fc_GeqhiDEO8apFrVo9Tm8yS2HaJ_KyFRqdhejgCZ7g'
+  }
+];
+
+export const labCertifications: LabCertification[] = [
+  {
+    id: 'cert1',
+    title: 'Associate Cloud Engineer',
+    issuer: 'Google Cloud',
+    issued: 'JAN 2024',
+    expires: 'JAN 2027',
+    credentialId: '91531373',
+    status: 'VERIFIED',
+    systemCode: 'GCP-ACE-24',
+    verifyUrl: 'https://www.credential.net/profile/kirankumarpasupuleti'
+  },
+  {
+    id: 'cert2',
+    title: 'Microsoft Certified: Azure Fundamentals',
+    issuer: 'Microsoft',
+    issued: 'JUN 2023',
+    status: 'VERIFIED',
+    systemCode: 'MS-AZ-FND',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/kiran-kumar-pasupuleti'
+  },
+  {
+    id: 'cert3',
+    title: 'AZ-900: Microsoft Azure Fundamentals',
+    issuer: 'Infosys',
+    issued: 'MAR 2023',
+    credentialId: 'OV5HKOIWPR',
+    status: 'VERIFIED',
+    systemCode: 'INFY-AZ900',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/kiran-kumar-pasupuleti'
+  },
+  {
+    id: 'cert4',
+    title: 'Financial Services Capital Markets',
+    issuer: 'Infosys',
+    issued: 'OCT 2020',
+    credentialId: 'JGGRMJ009D',
+    status: 'ACTIVE',
+    systemCode: 'INFY-FIN-CAP',
+    verifyUrl: 'https://www.infosys.com'
+  },
+  {
+    id: 'cert5',
+    title: 'Agile Scrum in Practice',
+    issuer: 'Infosys',
+    issued: 'SEP 2018',
+    credentialId: '4DFEXJEW8F',
+    status: 'ACTIVE',
+    systemCode: 'INFY-AG-SCR',
+    verifyUrl: 'https://www.infosys.com'
   }
 ];
 

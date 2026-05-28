@@ -29,6 +29,18 @@ export interface EducationItem {
   image: string;
 }
 
+export interface LabCertification {
+  id: string;
+  title: string;
+  issuer: string;
+  issued: string;
+  expires?: string;
+  credentialId?: string;
+  status: 'VERIFIED' | 'ACTIVE' | 'ARCHIVED';
+  systemCode: string;
+  verifyUrl: string;
+}
+
 export interface ProjectItem {
   id: string;
   title: string;
