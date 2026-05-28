@@ -3,7 +3,6 @@ import { portfolioMetadata } from '../data/portfolioData';
 
 export default function Stats() {
   const statsList = [
-    { value: portfolioMetadata.releaseTag, label: 'LATEST RELEASE' },
     { value: portfolioMetadata.commits, label: 'COMMITS' },
     { value: portfolioMetadata.tsMastery, label: 'TYPESCRIPT MASTERY' },
     { value: portfolioMetadata.designFocus, label: 'DESIGN FOCUS' }
@@ -30,7 +29,7 @@ export default function Stats() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: '-50px' }}
-      className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 md:mb-24"
+      className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-16 md:mb-24"
     >
       {statsList.map((stat, idx) => (
         <motion.div

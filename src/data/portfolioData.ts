@@ -9,6 +9,7 @@ export const portfolioMetadata = {
   bio: "I build AI-enabled enterprise platforms, release readiness automation, and cloud-integrated .NET systems that unify legacy architecture, streamline API contracts, and accelerate business consolidation during mergers and acquisitions.",
   avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDmweOQ6vdfKoJ1n3ibulpVhYk2hhADlvmYayuwGFpYYd_QZfzUP5k9I_GnfjQTRSm9PwvFtATIOD-KqcwKkoilh6Tc9LtBF9aNp1-7Wu3Zpt-7YLZBbgh5r9M7MYYiGe17YRUCBaFTnTnwa6b3unt7ZSQ8_MizmHcta75nzzrl9yQ0rHKNYiKM-qrMQTuF7Ix9N5Ms6q0FYV0KpMN6bN46kUlexoXFh-PiQtOdN8tjENo57M0Gdoq_9RjTBKDpjVS2SvnxTvicqNRr',
   github: 'https://github.com/keeyrun1/Portfolio',
+  linkedin: 'https://www.linkedin.com/in/kiran-kumar-pasupuleti-465331129/',
   releaseTag: 'v2.1',
   commits: '10+ Years',
   tsMastery: 'Azure Cloud',

@@ -33,20 +33,9 @@ export default function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ y: -4 }}
-            className="group bg-zinc-950/40 border border-zinc-900/80 rounded-2xl overflow-hidden transition-all duration-300 relative text-left p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-stretch"
+            className="group bg-zinc-950/40 border border-zinc-900/80 rounded-2xl overflow-hidden transition-all duration-300 relative text-left p-6 sm:p-8 flex flex-col gap-6"
           >
-            {/* Embedded illustration display */}
-            <div className="w-full md:w-60 h-40 md:h-auto overflow-hidden rounded-xl relative shrink-0">
-              <img 
-                alt={item.title} 
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-750 ease-out filter grayscale contrast-110 brightness-95 group-hover:grayscale-0" 
-                src={item.image}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 to-transparent" />
-            </div>
-
-            {/* Bottom Content Area */}
+            {/* Top Content Area */}
             <div className="flex flex-col justify-between py-1">
               <div>
                 <div className="flex flex-wrap items-center gap-2.5 mb-3">
@@ -73,6 +62,17 @@ export default function Education() {
                   <Terminal size={12} className="text-zinc-650" /> SYSTEM RESOLUTION: SUCCESS [CLASS_COMPRESSED]
                 </span>
               </div>
+            </div>
+
+            {/* Embedded illustration display moved to the bottom */}
+            <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-xl relative shrink-0">
+              <img 
+                alt={item.title} 
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-750 ease-out filter grayscale contrast-110 brightness-95 group-hover:grayscale-0" 
+                src={item.image}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>
           </motion.div>
         ))}
